@@ -1,0 +1,32 @@
+{
+    "name": "danieldayton/sarahdeasy",
+    "description": "Wordpress theme for sarahdeasy.com",
+    "type": "project",
+    "require": {
+        "wpackagist-plugin/post-types-order": "*",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "wpackagist-plugin/svg-support": "*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

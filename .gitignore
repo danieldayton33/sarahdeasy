@@ -1,3 +1,6 @@
-/node_modules
-/.idea
-/.vscode
+/vendor/
+!/wp-content/plugins/
+/wp-content/plugins/*
+!/wp-content/themes/
+!/wp-content/themes/*
+.idea/
